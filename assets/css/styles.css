@@ -1,0 +1,216 @@
+@font-face {
+    font-family: TT Travels Next Edu Variable;
+    src: local('TT Travels Next Edu Variable'), url('../fonts/TT\ Travels\ Next\ Educational\ Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: TT Travels Next Edu Variable;
+    src: local('TT Travels Next Edu Variable'), url('../fonts/TT\ Travels\ Next\ Educational\ Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+:root {
+    --color-yellow: #FDEFBF;
+    --color-blue: #000080;
+    --color-light-blue: #58A4FB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: TT Travels Next Edu Variable, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    background-color: var(--color-light-blue);
+    color: var(--color-yellow);
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 500;
+    margin: 0 0 50px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    font-size: 24px;
+    color: var(--color-yellow);
+}
+
+input {
+    display: block;
+    width: 100%;
+    background: transparent !important;
+    border: 1px solid var(--color-yellow);
+    color: var(--color-yellow);
+    padding: 26px 20px;
+    margin-bottom: 28px;
+    font-family: inherit;
+    font-size: 26px;
+    outline: 0;
+}
+
+input::placeholder {
+    color: var(--color-yellow);
+}
+
+.button {
+    background: var(--color-yellow);
+    color: var(--color-blue);
+    padding: 6px 8px;
+    font-family: inherit;
+    font-size: 26px;
+    font-weight: 500;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+}
+
+.button-large {
+    width: 100%;
+    padding: 26px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--color-light-blue);
+    z-index: 9;
+}
+
+.header-content {
+    border-top: 2px solid var(--color-yellow);
+    border-bottom: 2px solid var(--color-yellow);
+    padding: 30px 0;
+}
+
+.header .brand {
+    display: inline-block;
+    width: 320px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.nav-link-margin {
+    margin: 0 40px;
+}
+
+.nav-link-active {
+    border-bottom: 2px solid var(--color-yellow);
+}
+
+.page-content {
+    padding-top: 205px;
+}
+
+.section {
+    padding: 80px 0;
+    border-bottom: 2px solid var(--color-yellow);
+    position: relative;
+}
+
+.footer {
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+    padding: 60px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.col-50 {
+    width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    overflow: auto;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    width: 890px;
+    margin: 50px auto;
+    padding: 48px 38px;
+    background: var(--color-light-blue);
+    color: var(--color-yellow);
+    position: relative;
+    transition: all 3s ease-in-out;
+    z-index: 11;
+}
+
+.popup .close {
+    position: absolute;
+    top: 48px;
+    right: 38px;
+    transition: all 200ms;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.popup h2 {
+    margin: 0 0 27px;
+}

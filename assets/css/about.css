@@ -1,0 +1,20 @@
+.page-content {
+    background: url("../images/about-bg.png") center /cover;
+}
+
+.section-text {
+    display: inline-block;
+    width: 54%;
+}
+
+.section-image {
+    display: inline-block;
+    width: 45%;
+    padding-left: 26px;
+}
+
+.section-1 .section-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

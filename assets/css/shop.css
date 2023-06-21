@@ -1,0 +1,20 @@
+.page-content {
+    background: url("../images/about-bg.png") center /cover;
+}
+
+.product {
+    padding-bottom: 100px;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.price {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 20px;
+}
